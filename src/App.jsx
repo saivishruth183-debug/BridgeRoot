@@ -6,12 +6,14 @@ import Services from './pages/Services'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Footer from './compnents/Footer'
+import ScrollToTop from './compnents/ScrolltoTop'
 
 const App = () => {
   return (
     <div>
       <Navbar />
       <div>
+        <ScrollToTop />  
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
